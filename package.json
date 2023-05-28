@@ -1,14 +1,19 @@
 {
-  "name": "myna-safety",
+  "name": "myna-safety-liff",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "stylelint:fix": "stylelint src/**/*.{css,scss,sass} --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json}'",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@line/liff": "2.21.4",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -19,6 +24,15 @@
     "@types/react-dom": "18.2.4",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-scss": "^5.0.0",
     "typescript": "5.0.4"
   }
 }
