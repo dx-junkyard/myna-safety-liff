@@ -35,6 +35,16 @@ const LiffLayout = ({ children }: { children: React.ReactNode }) => {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ja">
+      <head>
+        <title>マイナセーフティ</title>
+        <meta
+          name="description"
+          content={
+            '災害等が発生した際、確実に本人より、”自分はここにいるよ”と家族に伝えたい、”家族の居場所を確認したい”ことはありませんか。それに応えるアプリが、マイナセーフティです。'
+          }
+        />
+        <link rel="icon" href={'/favicon.ico'} />
+      </head>
       <body>
         <RecoilRoot>
           <LiffLayout>{children}</LiffLayout>

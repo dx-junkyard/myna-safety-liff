@@ -6,12 +6,6 @@ import { liffErrorState, liffObjectState } from 'recoil/liffState';
 
 import styles from '../styles/Home.module.css';
 
-// export const metadata: Metadata = {
-//   title: 'マイナセーフティ',
-//   description:
-//     '災害等が発生した際、確実に本人より、”自分はここにいるよ”と家族に伝えたい、”家族の居場所を確認したい”ことはありませんか。それに応えるアプリが、マイナセーフティです。',
-// };
-
 const Home: NextPage = () => {
   const liff = useRecoilValue(liffObjectState);
   const liffError = useRecoilValue(liffErrorState);
